@@ -33,3 +33,4 @@ C:\Users\marco\source\repos\ProjetoMvc\ProjetoMvc\obj\Debug\netcoreapp2.1\Projet
 C:\Users\marco\source\repos\ProjetoMvc\ProjetoMvc\obj\Debug\netcoreapp2.1\ProjetoMvc.pdb
 C:\Users\marco\source\repos\ProjetoMvc\ProjetoMvc\obj\Debug\netcoreapp2.1\ProjetoMvc.genruntimeconfig.cache
 C:\Users\marco\source\repos\ProjetoMvc\ProjetoMvc\obj\Debug\netcoreapp2.1\ProjetoMvc.csproj.CopyComplete
+C:\Users\marco\source\repos\ProjetoMvc\ProjetoMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.cshtml.g.cs
