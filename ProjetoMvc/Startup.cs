@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProjetoMvc.Models;
 using ProjetoMvc.Data;
+using ProjetoMvc.Services;
 
 namespace ProjetoMvc
 {
@@ -41,6 +42,7 @@ namespace ProjetoMvc
                    options.UseMySql(Configuration.GetConnectionString("ProjetoMvcContext"), builder =>
                     builder.MigrationsAssembly("ProjetoMvc")));
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
