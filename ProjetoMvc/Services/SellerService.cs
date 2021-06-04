@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ProjetoMvc.Services.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjetoMvc.Services
 {
@@ -42,5 +44,22 @@ namespace ProjetoMvc.Services
         {
             throw new NotImplementedException();
         }
+
+        public void Update(Seller obj)
+        {
+            if (!_context.Seller.Any(x => x.Id == obj.Id))
+            {
+                throw new NotFoundExeception("ID NOT FOUND");
+            }
+            try { 
+            _context.Update(obj);
+            _context.SaveChanges();
+            }
+           catch(DbUpdateConcurrencyException e)
+            {
+                throw new DbConcurrencyException(e.Message);
+            }
+        }
+        
     }
 }
